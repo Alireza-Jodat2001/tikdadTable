@@ -37,6 +37,10 @@
     .filter--bottom-box > button img {
       display: block;
       width: 45px; }
+      @media screen and (max-width: 400px) {
+        .filter--bottom-box > button img {
+          width: 35px;
+          height: 35px; } }
 
 .filter--bottom-box .search-field {
   border-radius: 5px;
@@ -44,6 +48,9 @@
   height: 40px;
   position: relative;
   flex: 1; }
+  @media screen and (max-width: 400px) {
+    .filter--bottom-box .search-field {
+      height: 35px; } }
   .filter--bottom-box .search-field__input {
     outline: none;
     border: none;
@@ -66,13 +73,15 @@
           font-size: 16px; } }
       @media screen and (max-width: 400px) {
         .filter--bottom-box .search-field__input::placeholder {
-          font-size: 13px !important; } }
+          font-size: 12px !important; } }
     @media screen and (max-width: 550px) {
       .filter--bottom-box .search-field__input {
         font-size: 16px; } }
     @media screen and (max-width: 400px) {
       .filter--bottom-box .search-field__input {
-        font-size: 14px; } }
+        font-size: 12px;
+        padding-left: 5px;
+        padding-right: 35px; } }
   .filter--bottom-box .search-field__button {
     height: 100%;
     border: none;
@@ -88,6 +97,9 @@
     width: 25px;
     stroke: #aaa;
     transition: all 0.3s; }
+    @media screen and (max-width: 400px) {
+      .filter--bottom-box .search-field__icon {
+        width: 17px; } }
 
 .search-button {
   height: 40px;
@@ -99,10 +111,17 @@
   align-items: center;
   background: var(--color-gray-light) !important;
   border-radius: 6px; }
+  @media screen and (max-width: 400px) {
+    .search-button {
+      width: 35px;
+      height: 35px; } }
   .search-button svg {
     width: 25px;
     stroke: #000;
     transition: all 0.3s; }
+    @media screen and (max-width: 400px) {
+      .search-button svg {
+        width: 17px; } }
 
 .filter--top-box {
   display: flex;
@@ -125,12 +144,11 @@
         font-size: 16px; } }
     @media screen and (max-width: 400px) {
       .filter--top-box .top-box__button {
-        font-size: 14px;
-        padding: 0 5px; } }
+        font-size: 12px;
+        padding: 5px 5px; } }
   .filter--top-box .filter-active {
     background: var(--color-purple-primary);
     color: var(--color-white);
-    min-width: 150px;
     flex: 2; }
     .filter--top-box .filter-active::before {
       content: "\002714";
@@ -143,7 +161,7 @@
   text-align: center; }
   @media screen and (max-width: 400px) {
     .tabel-container .tabel {
-      font-size: 10px; } }
+      font-size: 9px; } }
   .tabel-container .tabel__tr {
     height: 35px; }
     .tabel-container .tabel__tr:first-child {
@@ -161,3 +179,6 @@
   .tabel-container .tabel__td:first-child img {
     width: 27px;
     transform: translateY(4px); }
+    @media screen and (max-width: 400px) {
+      .tabel-container .tabel__td:first-child img {
+        width: 20px !important; } }
