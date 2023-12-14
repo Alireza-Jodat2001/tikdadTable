@@ -63,10 +63,10 @@
       transition: all 0.3s; }
       @media screen and (max-width: 550px) {
         .filter--bottom-box .search-field__input::placeholder {
-          font-size: 16px; } }
+          font-size: 14px; } }
     @media screen and (max-width: 550px) {
       .filter--bottom-box .search-field__input {
-        font-size: 16px; } }
+        font-size: 14px; } }
   .filter--bottom-box .search-field__button {
     height: 100%;
     border: none;
@@ -116,7 +116,7 @@
     flex: 1; }
     @media screen and (max-width: 550px) {
       .filter--top-box .top-box__button {
-        font-size: 16px; } }
+        font-size: 14px; } }
   .filter--top-box .filter-active {
     background: var(--color-purple-primary);
     color: var(--color-white);
