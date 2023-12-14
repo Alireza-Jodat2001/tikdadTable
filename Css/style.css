@@ -63,8 +63,14 @@
       transition: all 0.3s; }
       @media screen and (max-width: 550px) {
         .filter--bottom-box .search-field__input::placeholder {
-          font-size: 14px; } }
+          font-size: 16px; } }
+      @media screen and (max-width: 400px) {
+        .filter--bottom-box .search-field__input::placeholder {
+          font-size: 13px !important; } }
     @media screen and (max-width: 550px) {
+      .filter--bottom-box .search-field__input {
+        font-size: 16px; } }
+    @media screen and (max-width: 400px) {
       .filter--bottom-box .search-field__input {
         font-size: 14px; } }
   .filter--bottom-box .search-field__button {
@@ -116,7 +122,11 @@
     flex: 1; }
     @media screen and (max-width: 550px) {
       .filter--top-box .top-box__button {
-        font-size: 14px; } }
+        font-size: 16px; } }
+    @media screen and (max-width: 400px) {
+      .filter--top-box .top-box__button {
+        font-size: 14px;
+        padding: 0 5px; } }
   .filter--top-box .filter-active {
     background: var(--color-purple-primary);
     color: var(--color-white);
@@ -131,6 +141,9 @@
   border-spacing: 0 10px;
   width: 100%;
   text-align: center; }
+  @media screen and (max-width: 400px) {
+    .tabel-container .tabel {
+      font-size: 10px; } }
   .tabel-container .tabel__tr {
     height: 35px; }
     .tabel-container .tabel__tr:first-child {
